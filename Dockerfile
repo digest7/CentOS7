@@ -1,6 +1,5 @@
 From centos
 RUN rm -rf /etc/yum.repos.d/*
-ADD haha.repo /etc/yum.repos.d/
 ADD CentOS-Base.repo /etc/yum.repos.d/
 ONBUILD ADD start.sh /root/start.sh
 RUN yum clean all
